@@ -1,0 +1,39 @@
+[2018-11-24T00:15:41.599] [INFO] pinus - [chat-server-1 application.js] application inited: "chat-server-1"
+[2018-11-24T00:15:41.615] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter before start...
+[2018-11-24T00:15:41.617] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-11-24T00:15:41.634] [INFO] pinus-admin - [chat-server-1 consoleService.js] try to connect master: "chat", "127.0.0.1", 3005
+[2018-11-24T00:15:41.706] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-11-24T00:15:41.720] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" finish start
+[2018-11-24T00:15:41.723] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" startup in 113 ms
+[2018-11-24T00:15:41.728] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] [chat-server-1] receive addServer signal: {"action":"addServer","server":{"main":"D:\\WorkSpace\\snake\\snake\\game-server\\dist\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--inspect=10003","serverType":"gate","handlerPaths":["D:\\WorkSpace\\snake\\snake\\game-server\\dist\\app\\servers\\gate\\handler"],"pid":13356}}
+[2018-11-24T00:23:54.939] [INFO] pinus - [chat-server-1 application.js] application inited: "chat-server-1"
+[2018-11-24T00:23:54.958] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter before start...
+[2018-11-24T00:23:54.961] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-11-24T00:23:54.982] [INFO] pinus-admin - [chat-server-1 consoleService.js] try to connect master: "channel", "127.0.0.1", 3005
+[2018-11-24T00:23:55.080] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-11-24T00:23:55.085] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" finish start
+[2018-11-24T00:23:55.088] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" startup in 135 ms
+[2018-11-24T00:23:55.091] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] [chat-server-1] receive addServer signal: {"action":"addServer","server":{"main":"D:\\WorkSpace\\snake\\snake\\game-server\\dist\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--inspect=10003","serverType":"gate","handlerPaths":["D:\\WorkSpace\\snake\\snake\\game-server\\dist\\app\\servers\\gate\\handler"],"pid":13380}}
+[2018-11-24T00:24:13.903] [INFO] logger - [chat-server-1 console] connected
+[2018-11-24T00:24:13.906] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:24:36.464] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onLeave, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:24:42.739] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:24:46.472] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onLeave, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:24:47.658] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:25:23.677] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onLeave, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:25:25.439] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:31:12.663] [INFO] pinus - [chat-server-1 application.js] application inited: "chat-server-1"
+[2018-11-24T00:31:12.679] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter before start...
+[2018-11-24T00:31:12.681] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-11-24T00:31:12.698] [INFO] pinus-admin - [chat-server-1 consoleService.js] try to connect master: "channel", "127.0.0.1", 3005
+[2018-11-24T00:31:12.790] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" enter after start...
+[2018-11-24T00:31:12.795] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" finish start
+[2018-11-24T00:31:12.798] [INFO] pinus - [chat-server-1 application.js] "chat-server-1" startup in 124 ms
+[2018-11-24T00:31:12.802] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] [chat-server-1] receive addServer signal: {"action":"addServer","server":{"main":"D:\\WorkSpace\\snake\\snake\\game-server\\dist\\app.js","env":"development","id":"connector-server-1","host":"127.0.0.1","port":4050,"clientPort":3050,"frontend":"true","args":"--inspect=10001","serverType":"connector","remoterPaths":[{"namespace":"sys","serverType":"connector","path":"D:\\WorkSpace\\snake\\snake\\game-server\\node_modules\\pinus\\dist\\lib\\common\\remote\\frontend"},{"namespace":"user","serverType":"connector","path":"D:\\WorkSpace\\snake\\snake\\game-server\\dist\\app\\servers\\connector\\remote"}],"handlerPaths":["D:\\WorkSpace\\snake\\snake\\game-server\\dist\\app\\servers\\connector\\handler"],"pid":14556}}
+[2018-11-24T00:31:12.849] [DEBUG] pinus - [chat-server-1 monitorwatcher.js] [chat-server-1] receive addServer signal: {"action":"addServer","server":{"main":"D:\\WorkSpace\\snake\\snake\\game-server\\dist\\app.js","env":"development","id":"gate-server-1","host":"127.0.0.1","clientPort":3014,"frontend":"true","args":"--inspect=10003","serverType":"gate","handlerPaths":["D:\\WorkSpace\\snake\\snake\\game-server\\dist\\app\\servers\\gate\\handler"],"pid":13576}}
+[2018-11-24T00:31:50.194] [INFO] logger - [chat-server-1 console] connected
+[2018-11-24T00:31:50.198] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:33:25.289] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onLeave, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:33:27.745] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:39:30.307] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onLeave, msg: {"user":"testUser"}, groups: {}, opts: undefined
+[2018-11-24T00:39:31.675] [DEBUG] pinus - [chat-server-1 channelService.js] [chat-server-1] channelService sendMessageByGroup route: onAdd, msg: {"user":"testUser"}, groups: {}, opts: undefined
