@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>贪吃蛇游戏</title>
+		<link type="text/css" rel="stylesheet" href="css/com.css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jQuery-jsface-min.js"></script>
+		<script src="js/lib/build/build.js" type="text/javascript"></script>
+		<script type="text/javascript">
+            require('boot');
+		</script>
+	</head>
+
+	<body>
+		<div id="game_window">
+			正在初始化，请稍候
+		</div>
+		<div id="game_head">
+			<p class="title"> 贪 吃 蛇 <span id="note"></span></p>
+			<p class="btnlist">
+				<a href="javascript:;" id="start">开始游戏</a>
+				<a href="javascript:;" id="pause">暂停游戏</a>
+				<a href="javascript:;" id="end">重载游戏</a>
+				<a href="javascript:;" id="speed">游戏加速</a>
+			</p>
+		</div>
+		<div id="source">
+			<div id="score">0</div>
+			<div id="step">步数:<span id="counts">0</span>,长度:<span id="body_len">2</span></div>
+			<div id="user"></div>
+		</div>
+		<script src="js/snake.js" type="text/javascript"></script>
+		<script src="js/client.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$("#start").click(function(){
+                let username = "testUser";
+                let rid = '1';
+                //query entry of connection
+                queryEntry(username, function(ahost, aport) {
+                    pomelo.init({
+                        host: ahost,
+                        port: aport,
+                        log: true
+                    }, function() {
+                        var route = "connector.entryHandler.enter";
+                        pomelo.request(route, {
+                            username: username,
+                            rid: rid
+                        }, function(data) {
+                            snake.setColor(data.color);
+                            if(data.error) {
+                                showError(DUPLICATE_ERROR);
+                                return;
+                            }
+                            initUserList(data);
+                        });
+                    });
+                });
+                $("#game_head").animate({paddingTop:"0px",paddingBottom:"10px"},400);
+                $(".title").animate({fontSize:"30px",height:"40px"},400);
+                $("#game_window").fadeIn(400);
+                game.go();
+			});
+			
+			$("#pause").click(function(){
+				if(isgo){
+					isgo=false;
+					$("#pause").text("继续游戏");
+				}else{
+					isgo=true;
+					$("#pause").text("暂停游戏");
+				};
+			});
+			
+			$("#speed").click(function(){
+				
+			});
+			
+			
+			$("#end").click(function(){
+				location.href = window.location.href;
+			});
+			
+			
+			document.onkeydown=function(event){ 
+				var e = event || window.event || arguments.callee.caller.arguments[0]; 
+				var d;
+				
+				switch(e&&e.keyCode){
+					case 37:d="left";break;
+					case 38:d="up";break;
+					case 39:d="right";break;
+					case 40:d="down";break;
+				}
+				snake.setDirection(d);
+			};
+			
+			/*
+			 经验：不要乱用this,javascript这货的this有时候搞不清楚指代的是谁，-_-!!!
+			 另外，貌似类的方法没有私有的方法，很容易被其他的实例化对象调用，那就悲剧了
+			 * */
+			
+		</script>
+	</body>
+
+</html>
